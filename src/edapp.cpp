@@ -62,6 +62,7 @@
 
 #include "edapp.h"
 #include "edframe.h"
+#include "concurrency.h"
 #include "manager.h"
 #include "prefsdlg.h"
 #include "extractor.h"
@@ -318,6 +319,8 @@ int PoeditApp::OnExit()
 #ifdef HAVE_HTTP_CLIENT
     CrowdinClient::CleanUp();
 #endif
+
+    background_queue::cleanup();
 
 #ifdef USE_SPARKLE
     Sparkle_Cleanup();
@@ -698,8 +701,7 @@ void PoeditApp::OnOpen(wxCommandEvent&)
                      OSX_OR_OTHER("", _("Open catalog")),
                      path,
                      wxEmptyString,
-                     wxString::Format("%s (*.po)|*.po",
-                         _("PO Translation Files")),
+                     Catalog::GetAllTypesFileMask(),
                      wxFD_OPEN | wxFD_FILE_MUST_EXIST | wxFD_MULTIPLE);
 
     if (dlg.ShowModal() == wxID_OK)
