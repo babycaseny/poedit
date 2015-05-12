@@ -31,6 +31,7 @@
 #include <wx/datetime.h>
 #include <wx/config.h>
 #include <wx/textfile.h>
+#include <wx/stdpaths.h>
 #include <wx/strconv.h>
 #include <wx/memtext.h>
 #include <wx/filename.h>
@@ -1901,6 +1902,49 @@ bool Catalog::DoSaveOnly(wxTextBuffer& f, wxTextFileType crlf)
     return f.Write(crlf, wxCSConv(m_header.Charset));
 }
 
+
+bool Catalog::HasDuplicateItems() const
+{
+    typedef std::pair<wxString, wxString> MsgId;
+    std::set<MsgId> ids;
+    for (auto& item: m_items)
+    {
+        if (!ids.emplace(std::make_pair(item->GetContext(), item->GetString())).second)
+            return true;
+    }
+    return false;
+}
+
+bool Catalog::FixDuplicateItems()
+{
+    auto oldname = m_fileName;
+
+    TempDirectory tmpdir;
+    if ( !tmpdir.IsOk() )
+        return false;
+
+    wxString po_file_temp = tmpdir.CreateFileName("catalog.po");
+    wxString po_file_fixed = tmpdir.CreateFileName("fixed.po");
+
+    if ( !DoSaveOnly(po_file_temp, wxTextFileType_Unix) )
+    {
+        wxLogError(_("Couldn't save file %s."), po_file_temp.c_str());
+        return false;
+    }
+
+    ExecuteGettext(wxString::Format("msguniq -o %s %s",
+                                    QuoteCmdlineArg(po_file_fixed),
+                                    QuoteCmdlineArg(po_file_temp)));
+
+    if (!wxFileName::FileExists(po_file_fixed))
+        return false;
+
+    bool ok = Load(po_file_fixed);
+    m_fileName = oldname;
+    return ok;
+}
+
+
 namespace
 {
 
@@ -2083,9 +2127,53 @@ wxString Catalog::GetSourcesRootPath() const
     return GetSourcesPath(m_fileName, m_header, SourcesPath::Root);
 }
 
+bool Catalog::HasSourcesConfigured() const
+{
+    return !m_fileName.empty() &&
+           !m_header.BasePath.empty() &&
+           !m_header.SearchPaths.empty();
+}
+
 bool Catalog::HasSourcesAvailable() const
 {
-    return !GetSourcesBasePath().empty() && !m_header.SearchPaths.empty();
+    if (!HasSourcesConfigured())
+        return false;
+
+    auto basepath = GetSourcesBasePath();
+    if (!wxFileName::DirExists(basepath))
+        return false;
+
+    for (auto& p: m_header.SearchPaths)
+    {
+        if (!wxFileName::DirExists(basepath + p))
+            return false;
+    }
+
+    auto wpfile = m_header.GetHeader("X-Poedit-WPHeader");
+    if (!wpfile.empty())
+    {
+        // The following tests in this function are heuristics, so don't run
+        // them in presence of X-Poedit-WPHeader and consider the existence
+        // of that file a confirmation of correct setup (even though strictly
+        // speaking only its absence proves anything).
+        return wxFileName::FileExists(basepath + wpfile);
+    }
+
+    if (m_header.SearchPaths.size() == 1)
+    {
+        // A single path doesn't give us much in terms of detection. About the
+        // only thing we can do is to check if it is is a well known directory
+        // that is unlikely to be the root.
+        auto root = GetSourcesRootPath();
+        if (root == wxGetUserHome() ||
+            root == wxStandardPaths::Get().GetDocumentsDir() ||
+            root.EndsWith(wxString(wxFILE_SEP_PATH) + "Desktop" + wxFILE_SEP_PATH))
+        {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 #if wxUSE_GUI // TODO: better separation into another file

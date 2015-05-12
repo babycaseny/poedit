@@ -95,7 +95,9 @@ class PoeditFrame : public wxFrame
 
         /// Returns active PoeditFrame, if it is unused (i.e. not showing
         /// content, not having catalog loaded); NULL otherwise.
-        static PoeditFrame *UnusedActiveWindow();
+        static PoeditFrame *UnusedActiveWindow() { return UnusedWindow(true); }
+        /// Ditto, but not required to be active
+        static PoeditFrame *UnusedWindow(bool active);
 
         /// Returns true if at least one one window has unsaved changes
         static bool AnyWindowIsModified();
@@ -115,6 +117,7 @@ class PoeditFrame : public wxFrame
         template<typename TFunctor>
         void WriteCatalog(const wxString& catalog, TFunctor completionHandler);
 
+        void FixDuplicatesIfPresent();
         void WarnAboutLanguageIssues();
 
         /// Did the user modify the catalog?
@@ -224,6 +227,7 @@ class PoeditFrame : public wxFrame
 
         // navigation to another item in the list
         typedef bool (*NavigatePredicate)(const CatalogItemPtr& item);
+        long NavigateGetNextItem(const long start, int step, NavigatePredicate predicate, bool wrap, CatalogItemPtr *out_item);
         void Navigate(int step, NavigatePredicate predicate, bool wrap);
         void OnDoneAndNext(wxCommandEvent&);
         void OnPrev(wxCommandEvent&);
@@ -293,6 +297,8 @@ private:
 
         void OnShowHideSidebar(wxCommandEvent& event);
         void OnUpdateShowHideSidebar(wxUpdateUIEvent& event);
+        void OnShowHideStatusbar(wxCommandEvent& event);
+        void OnUpdateShowHideStatusbar(wxUpdateUIEvent& event);
 
         void OnSelectionUpdate(wxUpdateUIEvent& event);
         void OnSelectionUpdateEditable(wxUpdateUIEvent& event);

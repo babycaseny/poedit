@@ -27,48 +27,105 @@
 #define Poedit_concurrency_h
 
 #include <functional>
+#include <future>
+#include <memory>
 
 #include <wx/app.h>
 #include <wx/weakref.h>
 
-#include "ThreadPool.h"
+#if defined(__WXOSX__) && defined(__clang__)
+    #define HAVE_DISPATCH
+    extern void call_on_main_thread_impl(std::function<void()>&& f);
+#endif
+
+#if defined(_MSC_VER) && (_MSC_VER >= 1800)
+    #define HAVE_PPL
+    #include <concrt.h>
+#endif
 
 // ----------------------------------------------------------------------
 // Background operations
 // ----------------------------------------------------------------------
 
-class background_queue
+#if defined(HAVE_PPL)
+
+class concurrency_queue
 {
 public:
+    /// Future type used by the queue.
+    template<typename T> using future = Concurrency::task<T>;
+
     /**
         Enqueue an operation for background processing.
-        
+
         Return future for it.
      */
-    template<class F, class... Args>
-    static auto add(F&& f, Args&&... args)
-        -> std::future<typename std::result_of<F(Args...)>::type>
+    template<class F>
+    static auto add(F&& f) -> future<typename std::result_of<F()>::type>
     {
-        return pool().enqueue(f, args...);
+        return Concurrency::create_task(f);
     }
 
+    /// @internal Call on shutdown to terminate the queue
+    static void cleanup() {}
+};
+
+template<typename T>
+inline bool is_future_valid(const concurrency_queue::future<T>& f)
+{
+    try
+    {
+        f.is_done();
+        return true;
+    }
+    catch (Concurrency::invalid_operation)
+    {
+        return false;
+    }
+}
+
+#else // generic version
+
+class concurrency_queue
+{
+public:
+    /// Future type used by the queue.
+    template<typename T> using future = std::future<T>;
+
+    /**
+        Enqueue an operation for background processing.
+
+        Return future for it.
+     */
+    template<class F>
+    static auto add(F&& f) -> future<typename std::result_of<F()>::type>
+    {
+        using return_type = typename std::result_of<F()>::type;
+        auto task = std::make_shared< std::packaged_task<return_type()> >(std::forward<F>(f));
+        future<return_type> res = task->get_future();
+        enqueue([task](){ (*task)(); });
+        return res;
+    }
 
     /// @internal Call on shutdown to terminate the queue
     static void cleanup();
 
 private:
-    static ThreadPool& pool();
+    static void enqueue(std::function<void()>&& f);
 };
+
+template<typename T>
+inline bool is_future_valid(const concurrency_queue::future<T>& f)
+{
+    return f.valid();
+}
+
+#endif // !HAVE_PPL
 
 
 // ----------------------------------------------------------------------
 // Helpers for running code on the main thread
 // ----------------------------------------------------------------------
-
-#if defined(__WXOSX__) && defined(__clang__)
-    #define HAVE_DISPATCH
-    extern void call_on_main_thread_impl(std::function<void()> func);
-#endif
 
 /**
     Simply calls the callable @a func on the main thread, asynchronously.

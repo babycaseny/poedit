@@ -589,6 +589,12 @@ class Catalog
         /// Exports the catalog to HTML format
         void ExportToHTML(std::ostream& output);
 
+        /// Detect a particular common breakage of catalogs.
+        bool HasDuplicateItems() const;
+
+        /// Fixes a common invalid kind of entries, when msgids aren't unique.
+        bool FixDuplicateItems();
+
         /**
             Return base path to source code for extraction, or empty string if not configured.
             
@@ -603,6 +609,11 @@ class Catalog
             Returns empty string if not configured.
          */
         wxString GetSourcesRootPath() const;
+
+        /**
+            Returns true if the source code to update the PO from is available.
+         */
+        bool HasSourcesConfigured() const;
 
         /**
             Returns true if the source code to update the PO from is available.
