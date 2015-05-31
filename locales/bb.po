@@ -4,9 +4,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Poedit master\n"
-"Report-Msgid-Bugs-To: poedit@googlegroups.com\n"
-"POT-Creation-Date: 2015-01-10 16:00+0100\n"
-"PO-Revision-Date: 2015-05-31 17:03+0800\n"
+"Report-Msgid-Bugs-To: help@poedit.net\n"
+"POT-Creation-Date: 2015-05-27 11:31+0200\n"
+"PO-Revision-Date: 2015-05-31 18:02+0800\n"
 "Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babyish\n"
 "Language: bb\n"
@@ -102,6 +102,18 @@ msgid "Error saving catalog"
 msgstr "Öra seiviŋ katalog"
 
 #
+msgid "PO Translation Files"
+msgstr "PO Transleiçion Fayls"
+
+#
+msgid "POT Translation Templates"
+msgstr "POT Transleiçion Templeits"
+
+#
+msgid "All Translation Files"
+msgstr "Ol Transleiçion Fayls"
+
+#
 msgid "Merging differences..."
 msgstr "Mörj diffèrènses..."
 
@@ -125,6 +137,102 @@ msgstr "Leŋgueij silekçion"
 #
 msgid "You must restart Poedit for this change to take effect."
 msgstr "Für nigè čeinj tu teik ifekt, nei diŋyǐu rīstart Poedit."
+
+msgid "Downloading translations is disabled in this project."
+msgstr "Dawnloudiŋ transleiçions wa disàbolen in nigè prōjekt."
+
+msgid "Not authorized, please sign in again."
+msgstr "Mi-òtoraisen, plīs sain-in agäin."
+
+#, fuzzy
+msgid "Sign in to Crowdin"
+msgstr "사용 서명: "
+
+msgid ""
+"Crowdin is an online localization management platform and collaborative "
+"translation tool. Poedit can seamlessly sync PO files managed at Crowdin."
+msgstr ""
+"Crowdin wa onlain lokolaiseiçion männeijmènt plätform en kolläboreitiv "
+"transleiçion tūl.  Poedit keyi synĥ PO fayls männeijen à Crowdin wiŧout "
+"problèms en hässols."
+
+#, fuzzy
+msgid "Sign In"
+msgstr "사용 서명: "
+
+#, fuzzy
+msgid "Sign in"
+msgstr "사용 서명: "
+
+#, fuzzy
+msgid "Sign Out"
+msgstr "사용 서명: "
+
+#, fuzzy
+msgid "Sign out"
+msgstr "사용 서명: "
+
+#, fuzzy
+msgid "Waiting for authentication…"
+msgstr "전송 완료를 기다립니다"
+
+#, fuzzy
+msgid "Updating user information…"
+msgstr "사용자 정보를 가져오지 못했습니다."
+
+#, fuzzy
+msgid "Signed in as:"
+msgstr ""
+"[-- 오류: 일치하지 않는 multipart/signed 구조! --]\n"
+"\n"
+
+msgid "Learn More About Crowdin"
+msgstr "(Lörn Moa Àbaut Crowdin)"
+
+msgid "Learn more about Crowdin"
+msgstr "(Lörn moa àbaut Crowdin)"
+
+#
+msgid "Open Crowdin translation"
+msgstr "Opèn Crowdin dè transleiçion"
+
+#
+msgid "Project:"
+msgstr "Prōjekt:"
+
+#
+msgid "Language:"
+msgstr "Leŋgueij:"
+
+#
+msgid "File:"
+msgstr "Fayl:"
+
+msgid "No translation projects listed in your Crowdin account."
+msgstr "Mwu transleiçion prōjekts listen in neidè Crowdin akkaunt."
+
+msgid "This project has no files that can be translated in Poedit."
+msgstr ""
+
+msgid "This file can only be edited in Crowdin’s web interface."
+msgstr ""
+
+#
+msgid "Downloading latest translations…"
+msgstr "Dawnloudiŋ leitest transleiçions..."
+
+msgid "Syncing with Crowdin"
+msgstr "Synĥ wiŧ Crowdin"
+
+msgid "Syncing with Crowdin failed."
+msgstr "Synĥ wiŧ Crowdin feilen."
+
+msgid "Crowdin error"
+msgstr "Crowdin dè öra"
+
+#
+msgid "Uploading translations…"
+msgstr "Ùploudiŋ transleiçions..."
 
 msgid "&Copy"
 msgstr "&Kopi"
@@ -176,8 +284,15 @@ msgstr ""
 "Please open and edit the corresponding PO file instead. When you save it, "
 "the MO file will be updated as well."
 
+#, fuzzy
 msgid "don't delete temporary files (for debugging)"
 msgstr "don't delete temporary files (for debugging)"
+
+msgid "handle a poedit:// URI"
+msgstr "händol 1-gè poedit:// URI"
+
+msgid "Failed to communicate with Poedit process."
+msgstr "Feilen tu kommyunikeit with Poedit proses."
 
 #, c-format
 msgid "Unhandled exception occurred: %s"
@@ -189,14 +304,6 @@ msgstr "Unhandled exception occurred."
 #
 msgid "Open catalog"
 msgstr "Opèn katalog"
-
-#
-msgid "All Files"
-msgstr "Ol Fayls"
-
-#
-msgid "PO Translation Files"
-msgstr "PO Transleiçion Fayls"
 
 #
 #, c-format
@@ -294,7 +401,7 @@ msgid "Make Lower Case"
 msgstr "Make Lower Case"
 
 msgid "Capitalize"
-msgstr "Capitalise"
+msgstr "Käpitolais"
 
 msgid "Speech"
 msgstr "Spīken "
@@ -320,10 +427,10 @@ msgid "Minimize"
 msgstr "Minimais"
 
 msgid "Zoom"
-msgstr "Zoom"
+msgstr "ẑum"
 
 msgid "Bring All to Front"
-msgstr "Bring All to Front"
+msgstr "Briŋ Ol tu Frònt"
 
 #
 msgid "PO Translation"
@@ -377,7 +484,7 @@ msgstr "Silekt Ol"
 #. TRANSLATORS: Keyboard shortcut for display in Windows menus
 #. TRANSLATORS: This is the key shortcut used in menus on Windows, some languages call them differently
 msgid "Ctrl+"
-msgstr "Ctrl+"
+msgstr "Ktrl+"
 
 #. TRANSLATORS: Keyboard shortcut for display in Windows menus
 #. TRANSLATORS: This is the key shortcut used in menus on Windows, some languages call them differently
@@ -402,7 +509,7 @@ msgstr "Dawn"
 
 #. TRANSLATORS: Keyboard shortcut, must correspond to translation of "Ctrl+"
 msgid "ctrl"
-msgstr "ctrl"
+msgstr "ktrl"
 
 #. TRANSLATORS: Keyboard shortcut, must correspond to translation of "Alt+"
 msgid "alt"
@@ -441,13 +548,25 @@ msgid "Singular:"
 msgstr "Siŋgol:"
 
 #
-#, fuzzy
 msgid "Plural:"
-msgstr "사용법: %s [<옵션>] [<TEXTDOMAIN>] <MSGID> <MSGID-PLURAL> <개수>\n"
+msgstr "Plurol:"
 
 #
 msgid "Translation:"
 msgstr "Transleiçion:"
+
+msgid ""
+"POT files are only templates and don’t contain any translations themselves.\n"
+"To make a translation, create a new PO file based on the template."
+msgstr ""
+
+#
+msgid "Create New Translation"
+msgstr "Krieit Niu Transleiçion"
+
+#
+msgid "Create new translation"
+msgstr "Krieit niu transleiçion"
 
 #. TRANSLATORS: %s is language name in its basic form (as you
 #. would see e.g. in a list of supported languages). You may need
@@ -504,10 +623,6 @@ msgid "Open catalog template"
 msgstr "Opèn katalog templeit"
 
 #
-msgid "POT Translation Templates"
-msgstr "POT Transleiçion Templeits"
-
-#
 msgid "Updating catalog"
 msgstr "Ùpdeiting katalog"
 
@@ -546,8 +661,8 @@ msgid ""
 "Entries with errors were marked in red in the list. Details of the error "
 "will be shown when you select such an entry."
 msgstr ""
-"Entries with errors were marked in red in the list. Details of the error "
-"will be shown when you select such an entry."
+"Entris wiŧ öras wa marken in red in đe list. Nigè öra dè diteils wa "
+"displeien when nigè entri wa silekten."
 
 msgid "The file was saved safely."
 msgstr "Fayl-wa seiven seifli."
@@ -590,20 +705,19 @@ msgid "The translation is ready for use."
 msgstr "Transleiçion-wa keyi yusiŋ."
 
 #
-msgid "No references to this string found."
-msgstr "Mwu riförènses tu nigè striŋ fainden."
-
-#
-msgid "Please choose the reference you want to show:"
-msgstr "Plīs silekt riförèns tu displei: "
-
-#
-msgid "References"
-msgstr "Riförènses loukeiçion"
-
-#
 msgid "Context:"
 msgstr "Kontekst:"
+
+#, c-format
+msgid "Poedit automatically fixed invalid content in the file “%s”."
+msgstr ""
+
+msgid ""
+"The file contained duplicate items, which is not allowed in PO files and "
+"would prevent the file from being used. Poedit fixed the issue, but you "
+"should review translations of any items marked as fuzzy and correct them if "
+"necessary."
+msgstr ""
 
 msgid "Language of the translation isn't set."
 msgstr "Transleiçion dè leŋgueij wa mi-seten. "
@@ -615,6 +729,23 @@ msgstr "Set Leŋgueij "
 #
 msgid "Set language"
 msgstr "Set leŋgueij "
+
+#. TRANSLATORS: This is shown underneath "Language of the translation isn't set (or ...is the same as source language)."
+msgid ""
+"Suggestions are not available if the translation language is not set "
+"correctly. Other features, such as plural forms, may be affected as well."
+msgstr ""
+
+msgid "Language of the translation is the same as source language."
+msgstr "Transleiçion dè target leŋgueij wa seim as sōrs leŋgueij."
+
+#
+msgid "Fix Language"
+msgstr "Fiks Leŋgueij"
+
+#
+msgid "Fix language"
+msgstr "Fiks leŋgueij "
 
 msgid ""
 "This catalog has entries with plural forms, but doesn't have Plural-Forms "
@@ -650,6 +781,7 @@ msgstr "Fiks hēdā "
 msgid "Plural forms expression used by the catalog is unusual for %s."
 msgstr "Plural forms expression used by the catalogue is unusual for %s."
 
+#. TRANSLATORS: A verb, shown as action button with ""Plural forms expression used by the catalog is unusual for %s.")"
 msgid "Review"
 msgstr "Rīvyu"
 
@@ -671,6 +803,11 @@ msgid "%d error"
 msgid_plural "%d errors"
 msgstr[0] "%d-gè öra"
 
+#, c-format
+msgid "%d entry"
+msgid_plural "%d entries"
+msgstr[0] "%d-gè entri"
+
 msgid " (unsaved)"
 msgstr " (mi-seiven)"
 
@@ -690,10 +827,12 @@ msgstr "Ùpdeit transleiçion memori feilen: %s"
 msgid "Purge deleted translations"
 msgstr "Pörj diliten transleiçions"
 
+#, fuzzy
 msgid "Do you want to remove all translations that are no longer used?"
 msgstr "Do you want to remove all translations that are no longer used?"
 
 #
+#, fuzzy
 msgid ""
 "If you continue with purging, all translations marked as deleted will be "
 "permanently removed. You will have to translate them again if they are added "
@@ -725,6 +864,7 @@ msgstr ""
 "By default, inaccurate results are filled in as well and marked as fuzzy. "
 "Check this option to only include accurate matches."
 
+#, fuzzy
 msgid "Don’t mark exact matches as fuzzy"
 msgstr "Don’t mark exact matches as fuzzy"
 
@@ -812,6 +952,10 @@ msgstr "Everything"
 msgid "Form %i"
 msgstr "Form %i"
 
+#
+msgid "Singular"
+msgstr "Siŋgolar"
+
 msgid "Zero"
 msgstr "Mwu"
 
@@ -821,8 +965,12 @@ msgstr "1-gè"
 msgid "Two"
 msgstr "2-gè"
 
+#
+msgid "Plural"
+msgstr "Plurol"
+
 msgid "Other"
-msgstr "Other"
+msgstr "Nitadè"
 
 #
 msgid "&Bookmarks"
@@ -854,6 +1002,12 @@ msgstr "Neimai Saidbār "
 msgid "Show Sidebar"
 msgstr "Displei Saidbār"
 
+msgid "Hide Status Bar"
+msgstr "Haid Steitùs Bar"
+
+msgid "Show Status Bar"
+msgstr "Displei Steitùs Bār"
+
 #
 msgid "Source text"
 msgstr "Sors tekst"
@@ -865,6 +1019,11 @@ msgstr "Transleiçion"
 msgid "ID"
 msgstr "ID"
 
+#
+#, c-format
+msgid "Source text — %s"
+msgstr "Sors tekst — %s"
+
 msgid "unknown language"
 msgstr "unknown language"
 
@@ -875,54 +1034,6 @@ msgstr "Transleiçion — %s"
 
 msgid "Error:"
 msgstr "Öra:"
-
-#
-msgid "Project info"
-msgstr "Prōjekt info"
-
-#
-msgid "Project name and version:"
-msgstr "Prōjekt neim en vörçion:"
-
-#
-msgid "Language:"
-msgstr "Leŋgueij:"
-
-#
-msgid "Team:"
-msgstr "團隊:"
-
-#
-msgid "Team's email address:"
-msgstr "團隊的電子郵件地址:"
-
-#
-msgid "Charset:"
-msgstr "Kärset:"
-
-#
-msgid "Source"
-msgstr "Sōrs "
-
-#
-msgid "Notes"
-msgstr "Nouts"
-
-#
-msgid "Automatic translation"
-msgstr "Òtomeitik transleiçion"
-
-#
-msgid "Fuzzy translation"
-msgstr "Fùzzi transleiçion"
-
-#
-msgid "Notes for translators:"
-msgstr "Nouts für transleitās:"
-
-#
-msgid "Comment:"
-msgstr "Komment:"
 
 #
 msgid "Source file"
@@ -941,9 +1052,74 @@ msgid "Open in editor"
 msgstr "Opèn in editā "
 
 #
+msgid "No references for the selected item."
+msgstr "Mwu riförènses für silekten aitèm."
+
+#
 #, c-format
 msgid "Error opening file %s!"
 msgstr "Öra opèniŋ fayl %s!"
+
+#
+msgid "Find"
+msgstr "Faind"
+
+msgid "Replace"
+msgstr "Rīplei"
+
+#. TRANSLATORS: Expander in Find window for additional options (case sensitive etc.)
+msgid "Options"
+msgstr "Opçions"
+
+msgid "Ignore case"
+msgstr "Ignor keis"
+
+msgid "Wrap around"
+msgstr "Wräp àraund"
+
+#
+msgid "Whole words only"
+msgstr "Whole wörds onli"
+
+#
+#, fuzzy
+msgid "Find in source texts"
+msgstr "Faind"
+
+#
+msgid "Find in translations"
+msgstr "Faind in transleiçions"
+
+#
+msgid "Find in comments"
+msgstr "Faind in komments"
+
+#
+msgid "Close"
+msgstr "Klos"
+
+#
+msgid "Replace All"
+msgstr "Rīpleis Ol"
+
+#
+msgid "Replace all"
+msgstr "Rīpleis ol"
+
+#
+msgid "< &Previous"
+msgstr "< Priv"
+
+#
+msgid "&Next >"
+msgstr "&Nèist >"
+
+#
+msgid "String to find"
+msgstr "Striŋ tu faind"
+
+msgid "Replacement string"
+msgstr "Rīpleismènt striŋ "
 
 #
 #, c-format
@@ -1185,8 +1361,19 @@ msgstr "Niu"
 msgid "Edit"
 msgstr "Edit"
 
+#
+msgid "Delete extractor"
+msgstr "Dilit iksträktā"
+
+#, c-format
+msgid "Are you sure you want to delete the “%s” extractor?"
+msgstr "Ayisyur nei diŋyǐu dilit «%s» dè iksträktā?"
+
 msgid "Extractors"
 msgstr "Iksträktās  "
+
+msgid "Accounts"
+msgstr "Akkaunts"
 
 #
 msgid "Automatically check for updates"
@@ -1234,16 +1421,48 @@ msgstr "Preserve formatting of existing files"
 msgid "Advanced"
 msgstr "Gokab"
 
+msgid ""
+"<big>Drag and Drop Folders Here</big>\n"
+"\n"
+"or use the + button"
+msgstr ""
+
+msgid ""
+"<big>Drag and drop folders here</big>\n"
+"\n"
+"or use the + button"
+msgstr ""
+
+msgid "Add Folders..."
+msgstr "Ädd Fouldèrs..."
+
+msgid "Add folders..."
+msgstr "Ädd fouldèrs..."
+
 #
-msgid "Additional keywords"
-msgstr "Äddeiçionol kyiwörds"
+msgid "Add Files..."
+msgstr "Ädd Fayls..."
+
+#
+msgid "Add files..."
+msgstr "Ädd fayls..."
+
+msgid "Add Wildcard..."
+msgstr "Ädd Bakdap-kard..."
+
+msgid "Add wildcard..."
+msgstr "Ädd bakdap-kard..."
 
 #
 msgid "Paths"
 msgstr "Paŧweis"
 
 msgid "Excluded paths"
-msgstr "Excluded paths"
+msgstr "Iksklūden paŧweis"
+
+#
+msgid "Additional keywords"
+msgstr "Äddeiçionol kyiwörds"
 
 msgid "Name of the project the translation is for"
 msgstr "Name of the project the translation is for"
@@ -1258,6 +1477,10 @@ msgid "Please save the file first. This section cannot be edited until then."
 msgstr "Please save the file first. This section cannot be edited until then."
 
 #
+msgid "Comment:"
+msgstr "Komment:"
+
+#
 msgid "OK"
 msgstr "Konförm"
 
@@ -1268,54 +1491,6 @@ msgstr "K&līr "
 #
 msgid "Clear the comment"
 msgstr "Klīr komment"
-
-#
-msgid "Find..."
-msgstr "Faind..."
-
-#
-msgid "String to find:"
-msgstr "Striŋ tu faind:"
-
-#
-msgid "Case sensitive"
-msgstr "Keissaiz sensitiv"
-
-#
-msgid "Start from the first item"
-msgstr "Start from de-1-gè aitèm"
-
-#
-msgid "Whole words only"
-msgstr "Whole wörds onli"
-
-#
-msgid "Find in original strings"
-msgstr "Faind in orijinol tekst"
-
-#
-msgid "Find in translations"
-msgstr "Faind in transleiçions"
-
-#
-msgid "Find in comments"
-msgstr "Faind in komments"
-
-#
-msgid "Find in automatic comments"
-msgstr "Faind in òtomätik komments"
-
-#
-msgid "Close"
-msgstr "Klos"
-
-#
-msgid "< &Previous"
-msgstr "< Priv"
-
-#
-msgid "&Next >"
-msgstr "&Nèist >"
 
 #
 msgid "Create new translations project"
@@ -1388,6 +1563,14 @@ msgid "Open Recent"
 msgstr "Opèn Zuigèn"
 
 #
+msgid "Open from Crowdin..."
+msgstr "Opèn from Crowdin"
+
+#
+msgid "Open From Crowdin..."
+msgstr "Opèn from Crowdin..."
+
+#
 msgid "&Save"
 msgstr "&Seiv"
 
@@ -1448,6 +1631,9 @@ msgstr "&Displei riförènses"
 msgid "&Find..."
 msgstr "&Faind..."
 
+msgid "Replace..."
+msgstr "Rīpleis…"
+
 #
 msgid "Find next"
 msgstr "Faind nèist"
@@ -1456,9 +1642,8 @@ msgstr "Faind nèist"
 msgid "Find previous"
 msgstr "Faind priv"
 
-#
-msgid "Find"
-msgstr "Faind"
+msgid "Find and Replace..."
+msgstr "Faind en rīpleis..."
 
 msgid "Find Next"
 msgstr "Faind Nèist"
@@ -1505,6 +1690,12 @@ msgstr "&Grūp bai kontekst "
 msgid "&Group By Context"
 msgstr "&Grūp Bai Kontekst"
 
+msgid "Entries with errors first"
+msgstr "Entris wiŧ öras biforhänd"
+
+msgid "Entries with Errors First"
+msgstr "Entris wiŧ Öras Biforhänd"
+
 msgid "&Untranslated entries first"
 msgstr "&Untranslated entries first"
 
@@ -1513,6 +1704,9 @@ msgstr "&Untranslated Entries First"
 
 msgid "Show sidebar"
 msgstr "Displei saidbār"
+
+msgid "Show status bar"
+msgstr "Displei steitùs bār"
 
 #
 msgid "C&atalog"
@@ -1533,6 +1727,9 @@ msgstr "Ùpdeit from &POT fayl..."
 #
 msgid "Update from &POT File..."
 msgstr "Ùpdeit from &POT Fayl..."
+
+msgid "Sync with Crowdin"
+msgstr "Synĥ wiŧ Crowdin"
 
 #
 msgid "Fill missing translations from &TM..."
@@ -1562,10 +1759,10 @@ msgid "&Properties..."
 msgstr "&Propèrtis..."
 
 msgid "&Done and next"
-msgstr "&Done and next"
+msgstr "&Finišen en nèist"
 
 msgid "&Done and Next"
-msgstr "&Done and Next"
+msgstr "&Finišen en Nèist"
 
 #
 msgid "&Previous translation"
@@ -1685,8 +1882,12 @@ msgid "Catalog properties"
 msgstr "Catalogue properties"
 
 #
+msgid "Project name and version:"
+msgstr "Prōjekt neim en vörçion:"
+
+#
 msgid "Plural Forms:"
-msgstr "複數形式:"
+msgstr "Plurol Forms"
 
 #
 msgid "Use default rules for this language"
@@ -1699,8 +1900,24 @@ msgid "Learn about plural forms"
 msgstr "Lörn àbaut plurol forms"
 
 #
+msgid "Charset:"
+msgstr "Kärset:"
+
+#
+msgid "Team:"
+msgstr "團隊:"
+
+#
+msgid "Team's email address:"
+msgstr "團隊的電子郵件地址:"
+
+#
 msgid "Translation properties"
 msgstr "Transleiçion propèrtis "
+
+#
+msgid "Sources paths"
+msgstr "Sōrses paŧweis  "
 
 msgid "Extract text from source files in the following directories:"
 msgstr "Iksträkt tekst from sōrs-fayls in folowiŋ direktòris: "
@@ -1709,9 +1926,8 @@ msgstr "Iksträkt tekst from sōrs-fayls in folowiŋ direktòris: "
 msgid "Base path:"
 msgstr "Beisik paŧwei:"
 
-#
-msgid "Sources paths"
-msgstr "Sōrses paŧweis  "
+msgid "Sources keywords"
+msgstr "Sōrses kyiwörds"
 
 #
 #, fuzzy
@@ -1724,9 +1940,6 @@ msgstr ""
 
 msgid "Learn about gettext keywords"
 msgstr "Learn about gettext keywords"
-
-msgid "Sources keywords"
-msgstr "Sōrses kyiwörds"
 
 #
 msgid "Update summary"
@@ -1789,8 +2002,8 @@ msgstr "Ùpdeit katalog - synĥronais wiŧ sōrses "
 msgid "Toggled if selected string has fuzzy translation"
 msgstr "切換所選的字串是否要包含模糊翻譯"
 
-msgid "Show or hide the sidebar."
-msgstr "Displei or neimai saidbār."
+msgid "Show or hide the sidebar"
+msgstr "Displei or neimai saidbār"
 
 #. TRANSLATORS: "Previous" as in used in the past, now replaced with newer.
 msgid "Previous source text:"
@@ -1802,6 +2015,10 @@ msgid ""
 msgstr ""
 "The old source text (before it changed during an update) that the fuzzy "
 "translation corresponds to."
+
+#
+msgid "Notes for translators:"
+msgstr "Nouts für transleitās:"
 
 #
 msgid "Add comment"
@@ -1833,6 +2050,7 @@ msgid "(New: %i, obsolete: %i)"
 msgstr "(%i-gè niu, %i -gè obsoleten)"
 
 #
+#, c-format
 msgid "Importing translations: %d"
 msgstr "Importiŋ transleiçions: %d"
 
@@ -1887,12 +2105,12 @@ msgid "Welcome to Poedit"
 msgstr "Welkom tu Poedit"
 
 #
-msgid "Open an existing PO file and edit the translation."
-msgstr "Open 1-gè iksisting PO fayl en edit nigè fayl dè transleiçion."
+msgid "Edit a translation"
+msgstr "Edit 1-gè transleiçion"
 
 #
-msgid "Create new translation"
-msgstr "Krieit niu transleiçion"
+msgid "Open an existing PO file and edit the translation."
+msgstr "Open 1-gè iksisting PO fayl en edit nigè fayl dè transleiçion."
 
 msgid ""
 "Take an existing PO file or POT template and create a new translation from "
@@ -1900,6 +2118,19 @@ msgid ""
 msgstr ""
 "Teik 1-gè iksistiŋ PO fayl or POT templeit en krieit 1-gè niu transleiçion "
 "from it."
+
+#
+#, fuzzy
+msgid "Collaborate on a translation with Crowdin"
+msgstr "Crowdin dè öra"
+
+msgid ""
+"Download a file from Crowdin project, translate and sync your changes back."
+msgstr ""
+"Dawnloud 1-gè fayl from Crowdin prōjekt, transleit en synĥ neidè čeinjs bäk."
+
+msgid "What is Crowdin?"
+msgstr "Crowdin-wa myenigga?"
 
 msgid "There are no translations. That’s unusual."
 msgstr "Mwu transleiçions. Keiigwaina-da."
@@ -1941,3 +2172,57 @@ msgstr "Iksträkt from sōrses"
 
 msgid "Configure source code extraction in Properties."
 msgstr "Konfigyur sōrskoud iksträkçion in Propèrtis."
+
+msgid "Sync"
+msgstr "Synĥ"
+
+msgid "Synchronize the translation with Crowdin"
+msgstr "Synĥronais đe transleiçion wiŧ Crowdin"
+
+#
+#~ msgid "Please choose the reference you want to show:"
+#~ msgstr "Plīs silekt riförèns tu displei: "
+
+#
+#~ msgid "References"
+#~ msgstr "Riförènses loukeiçion"
+
+#
+#~ msgid "Project info"
+#~ msgstr "Prōjekt info"
+
+#
+#~ msgid "Source"
+#~ msgstr "Sōrs "
+
+#
+#~ msgid "Notes"
+#~ msgstr "Nouts"
+
+#
+#~ msgid "Automatic translation"
+#~ msgstr "Òtomeitik transleiçion"
+
+#
+#~ msgid "Fuzzy translation"
+#~ msgstr "Fùzzi transleiçion"
+
+#
+#~ msgid "Find..."
+#~ msgstr "Faind..."
+
+#
+#~ msgid "Case sensitive"
+#~ msgstr "Keissaiz sensitiv"
+
+#
+#~ msgid "Start from the first item"
+#~ msgstr "Start from de-1-gè aitèm"
+
+#
+#~ msgid "Find in original strings"
+#~ msgstr "Faind in orijinol tekst"
+
+#
+#~ msgid "Find in automatic comments"
+#~ msgstr "Faind in òtomätik komments"
