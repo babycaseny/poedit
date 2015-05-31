@@ -3,11 +3,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Poedit 1.4\n"
+"Project-Id-Version: Poedit master\n"
 "Report-Msgid-Bugs-To: poedit@googlegroups.com\n"
 "POT-Creation-Date: 2015-01-10 16:00+0100\n"
-"PO-Revision-Date: 2015-04-16 21:30+0800\n"
-"Last-Translator: Babycasèny Gavèrnmènt <babycaseny@gmail.com>\n"
+"PO-Revision-Date: 2015-05-31 17:03+0800\n"
+"Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babyish\n"
 "Language: bb\n"
 "MIME-Version: 1.0\n"
@@ -93,8 +93,7 @@ msgid ""
 "\n"
 "It was saved in UTF-8 instead and the setting was modified accordingly."
 msgstr ""
-"The catalogue couldn't be saved in '%s' charset as specified in catalogue "
-"settings.\n"
+"Katalog-wa not du seiven in «%s» kärset as spesifaien in katalog settings.\n"
 "\n"
 "It was saved in UTF-8 instead and the setting was modified accordingly."
 
@@ -236,7 +235,7 @@ msgid "Undo"
 msgstr "Ùndiodio"
 
 msgid "Redo"
-msgstr "Redo"
+msgstr "Rīdiodio"
 
 msgid "Paste and Match Style"
 msgstr "Peist en Mätč Staiyol "
@@ -246,7 +245,7 @@ msgid "Delete"
 msgstr "Dilit"
 
 msgid "Spelling and Grammar"
-msgstr "Spelling and Grammar"
+msgstr "Speliŋ en Grämmar"
 
 msgid "Show Spelling and Grammar"
 msgstr "Displei Speliŋ en Grämmar"
@@ -255,13 +254,13 @@ msgid "Check Document Now"
 msgstr "Ček Dokyumènt Nau"
 
 msgid "Check Spelling While Typing"
-msgstr "Check Spelling While Typing"
+msgstr "Ček Speliŋ When Taipiŋ"
 
 msgid "Check Grammar With Spelling"
-msgstr "Check Grammar With Spelling"
+msgstr "Ček Grämmar Wiŧ Speliŋ"
 
 msgid "Correct Spelling Automatically"
-msgstr "Correct Spelling Automatically"
+msgstr "Korrekt Speliŋ Òtomeitikolli"
 
 msgid "Substitutions"
 msgstr "Sùbstityuçion "
@@ -298,13 +297,13 @@ msgid "Capitalize"
 msgstr "Capitalise"
 
 msgid "Speech"
-msgstr "Speech"
+msgstr "Spīken "
 
 msgid "Start Speaking"
-msgstr "Start Speaking"
+msgstr "Start Spīkiŋ"
 
 msgid "Stop Speaking"
-msgstr "Stop Speaking"
+msgstr "Stop Spīkiŋ"
 
 #
 msgid "&View"
@@ -346,7 +345,7 @@ msgid "&Undo"
 msgstr "Ù&ndiodio"
 
 msgid "&Redo"
-msgstr "&Redo"
+msgstr "&Rīdiodio"
 
 msgid "Cu&t"
 msgstr "Kù&t"
@@ -355,7 +354,7 @@ msgid "Cut"
 msgstr "Kùt"
 
 msgid "Copy"
-msgstr "Copy"
+msgstr "Kopi"
 
 msgid "&Paste"
 msgstr "&Peist"
@@ -387,7 +386,7 @@ msgstr "Alt+"
 
 #. TRANSLATORS: Keyboard shortcut for display in Windows menus
 msgid "Shift+"
-msgstr "Shift+"
+msgstr "Šift+"
 
 #. TRANSLATORS: Keyboard shortcut for display in Windows menus
 msgid "Enter"
@@ -399,7 +398,7 @@ msgstr "Ùp"
 
 #. TRANSLATORS: Keyboard shortcut for display in Windows menus
 msgid "Down"
-msgstr "Down"
+msgstr "Dawn"
 
 #. TRANSLATORS: Keyboard shortcut, must correspond to translation of "Ctrl+"
 msgid "ctrl"
@@ -411,7 +410,7 @@ msgstr "alt"
 
 #. TRANSLATORS: Keyboard shortcut, must correspond to translation of "Shift+"
 msgid "shift"
-msgstr "shift "
+msgstr "Šift"
 
 #
 msgid "You can't drop more than one file on Poedit window."
@@ -439,11 +438,12 @@ msgstr "Sōrs tekst:"
 
 #
 msgid "Singular:"
-msgstr "單數:"
+msgstr "Siŋgol:"
 
 #
+#, fuzzy
 msgid "Plural:"
-msgstr "複數:"
+msgstr "사용법: %s [<옵션>] [<TEXTDOMAIN>] <MSGID> <MSGID-PLURAL> <개수>\n"
 
 #
 msgid "Translation:"
@@ -455,8 +455,7 @@ msgstr "Transleiçion:"
 #, c-format
 msgid ""
 "Spellchecking is disabled, because the dictionary for %s isn’t installed."
-msgstr ""
-"Spellchecking is disabled, because the dictionary for %s isn’t installed."
+msgstr "Spelčekiŋ wa disàbolen, bikos dikçionari für %s wa mi-instolen."
 
 msgid "Install"
 msgstr "Instol"
@@ -632,7 +631,7 @@ msgstr ""
 "catalogue's Plural-Forms header says"
 
 msgid "Required header Plural-Forms is missing."
-msgstr "Required header Plural-Forms is missing."
+msgstr "Rīkwairen hēdā Plurol-Forms wa missiŋ."
 
 #, c-format
 msgid "Syntax error in Plural-Forms header (\"%s\")."
@@ -652,7 +651,7 @@ msgid "Plural forms expression used by the catalog is unusual for %s."
 msgstr "Plural forms expression used by the catalogue is unusual for %s."
 
 msgid "Review"
-msgstr "Review"
+msgstr "Rīvyu"
 
 #
 #, c-format
@@ -1108,7 +1107,7 @@ msgstr "Lörn from fayls..."
 
 #. TRANSLATORS: This is a button that deletes everything in the translation memory (i.e. clears/resets it).
 msgid "Reset"
-msgstr "Reset"
+msgstr "Rīset"
 
 msgid "Consult TM when updating from sources"
 msgstr "Consult TM when updating from sources"
@@ -1158,8 +1157,8 @@ msgid ""
 "Resetting the translation memory will irrevocably delete all stored "
 "translations from it. You can’t undo this operation."
 msgstr ""
-"Resetting the translation memory will irrevocably delete all stored "
-"translations from it. You can’t undo this operation."
+"Rīsetiŋ transleiçion memori wa possibolli irrīvokàbolli dilit ol stored "
+"transleiçions from it.  Ùndiodio nigè opèreiçion wa butdùk."
 
 #
 msgid "Cancel"
@@ -1366,7 +1365,7 @@ msgid "E&xit"
 msgstr "I&ksit"
 
 msgid "Quit"
-msgstr "Quit"
+msgstr "Ziuru"
 
 #
 msgid "&New..."
@@ -1442,7 +1441,6 @@ msgid "&Show references"
 msgstr "&Displei riförènses"
 
 #
-#, fuzzy
 msgid "&Show References"
 msgstr "&Displei riförènses"
 
@@ -1514,7 +1512,7 @@ msgid "&Untranslated Entries First"
 msgstr "&Untranslated Entries First"
 
 msgid "Show sidebar"
-msgstr "Displei saidbār."
+msgstr "Displei saidbār"
 
 #
 msgid "C&atalog"
@@ -1698,7 +1696,7 @@ msgid "Use custom expression"
 msgstr "Yus kùstomaisen ikspresçion"
 
 msgid "Learn about plural forms"
-msgstr "Learn about plural forms"
+msgstr "Lörn àbaut plurol forms"
 
 #
 msgid "Translation properties"
@@ -1900,8 +1898,8 @@ msgid ""
 "Take an existing PO file or POT template and create a new translation from "
 "it."
 msgstr ""
-"Take an existing PO file or POT template and create a new translation from "
-"it."
+"Teik 1-gè iksistiŋ PO fayl or POT templeit en krieit 1-gè niu transleiçion "
+"from it."
 
 msgid "There are no translations. That’s unusual."
 msgstr "Mwu transleiçions. Keiigwaina-da."
@@ -1930,7 +1928,7 @@ msgid "Update from POT"
 msgstr "Ùpdeit from POT fayl"
 
 msgid "Take translatable strings from an existing POT template."
-msgstr "Take translatable strings from an existing POT template."
+msgstr "Teik transleitàbol striŋs from 1-gè iksistiŋ POT templeit."
 
 msgid ""
 "You can also extract translatable strings directly from the source code:"
