@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: Poedit master\n"
 "Report-Msgid-Bugs-To: help@poedit.net\n"
 "POT-Creation-Date: 2015-05-27 11:31+0200\n"
-"PO-Revision-Date: 2015-05-31 18:02+0800\n"
+"PO-Revision-Date: 2015-05-31 18:48+0800\n"
 "Last-Translator: Tom K. C. Chiu <tomchiukc@gmail.com>\n"
 "Language-Team: Babyish\n"
 "Language: bb\n"
@@ -172,9 +172,8 @@ msgstr "사용 서명: "
 msgid "Sign out"
 msgstr "사용 서명: "
 
-#, fuzzy
 msgid "Waiting for authentication…"
-msgstr "전송 완료를 기다립니다"
+msgstr "Weiting fur òŧentikeiçion......"
 
 #, fuzzy
 msgid "Updating user information…"
@@ -864,9 +863,8 @@ msgstr ""
 "By default, inaccurate results are filled in as well and marked as fuzzy. "
 "Check this option to only include accurate matches."
 
-#, fuzzy
 msgid "Don’t mark exact matches as fuzzy"
-msgstr "Don’t mark exact matches as fuzzy"
+msgstr "Not dū mark iksäkt mätĉes as fùzzi"
 
 msgid ""
 "Only enable if you trust the quality of your TM. By default, all matches "
@@ -1082,9 +1080,8 @@ msgid "Whole words only"
 msgstr "Whole wörds onli"
 
 #
-#, fuzzy
 msgid "Find in source texts"
-msgstr "Faind"
+msgstr "Faind in sōrs teksts"
 
 #
 msgid "Find in translations"
@@ -1426,12 +1423,18 @@ msgid ""
 "\n"
 "or use the + button"
 msgstr ""
+"<big>Jrag en Drop Fouldèrs à Nido</big>\n"
+"\n"
+"or yus đe + bùtton"
 
 msgid ""
 "<big>Drag and drop folders here</big>\n"
 "\n"
 "or use the + button"
 msgstr ""
+"<big>Jrag en drop fouldèrs à nido</big>\n"
+"\n"
+"or yus đe + bùtton"
 
 msgid "Add Folders..."
 msgstr "Ädd Fouldèrs..."
@@ -2122,7 +2125,7 @@ msgstr ""
 #
 #, fuzzy
 msgid "Collaborate on a translation with Crowdin"
-msgstr "Crowdin dè öra"
+msgstr "Synĥronais đe transleiçion wiŧ Crowdin"
 
 msgid ""
 "Download a file from Crowdin project, translate and sync your changes back."
