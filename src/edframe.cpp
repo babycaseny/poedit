@@ -1352,6 +1352,7 @@ bool PoeditFrame::ExportCatalog(const wxString& filename)
     std::ofstream f;
     f.open(tempfile.FileName().fn_str());
     m_catalog->ExportToHTML(f);
+    f.close();
     if (!tempfile.Commit())
     {
         wxLogError(_("Couldn't save file %s."), filename);
@@ -1421,8 +1422,7 @@ void PoeditFrame::NewFromPOT(const wxString& pot_file, Language language)
     {
         if (lang.IsValid())
         {
-            catalog->Header().Lang = lang;
-            catalog->Header().SetHeaderNotEmpty("Plural-Forms", lang.DefaultPluralFormsExpr());
+            catalog->SetLanguage(lang);
 
             // Derive save location for the file from the location of the POT
             // file (same directory, language-based name). This doesn't always
@@ -1489,9 +1489,7 @@ void PoeditFrame::NewFromScratch()
     dlg->ShowWindowModalThenDo([=](int retcode){
         if (retcode == wxID_OK)
         {
-            Language lang = dlg->GetLang();
-            catalog->Header().Lang = lang;
-            catalog->Header().SetHeaderNotEmpty("Plural-Forms", lang.DefaultPluralFormsExpr());
+            catalog->SetLanguage(dlg->GetLang());
         }
     });
 }
@@ -2065,7 +2063,7 @@ void PoeditFrame::OnClearTranslation(wxCommandEvent&)
 void PoeditFrame::OnFind(wxCommandEvent&)
 {
     if (!m_findWindow)
-        m_findWindow = new FindFrame(this, m_list, m_catalog, m_textOrig, m_textTrans);
+        m_findWindow = new FindFrame(this, m_list, m_catalog, m_textOrig, m_textTrans, m_pluralNotebook);
 
     m_findWindow->ShowForFind();
 }
@@ -2073,7 +2071,7 @@ void PoeditFrame::OnFind(wxCommandEvent&)
 void PoeditFrame::OnFindAndReplace(wxCommandEvent&)
 {
     if (!m_findWindow)
-        m_findWindow = new FindFrame(this, m_list, m_catalog, m_textOrig, m_textTrans);
+        m_findWindow = new FindFrame(this, m_list, m_catalog, m_textOrig, m_textTrans, m_pluralNotebook);
 
     m_findWindow->ShowForReplace();
 }
@@ -2704,6 +2702,7 @@ void PoeditFrame::UpdateMenu()
 
     menubar->Enable(XRCID("menu_references"), nonEmpty);
     menubar->Enable(wxID_FIND, nonEmpty);
+    menubar->Enable(wxID_REPLACE, nonEmpty);
     menubar->Enable(XRCID("menu_find_next"), nonEmpty);
     menubar->Enable(XRCID("menu_find_prev"), nonEmpty);
 

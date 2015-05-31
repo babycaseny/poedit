@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
-"Report-Msgid-Bugs-To: poedit@googlegroups.com\n"
-"POT-Creation-Date: 2015-04-30 20:06+0200\n"
-"PO-Revision-Date: 2015-04-30 13:54-0400\n"
+"Report-Msgid-Bugs-To: help@poedit.net\n"
+"POT-Creation-Date: 2015-05-27 11:31+0200\n"
+"PO-Revision-Date: 2015-05-27 05:17-0400\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: Danish\n"
 "Language: da_DK\n"
@@ -95,7 +95,7 @@ msgid "POT Translation Templates"
 msgstr "POT oversættelses skabeloner"
 
 msgid "All Translation Files"
-msgstr ""
+msgstr "Alle oversættelsesfiler"
 
 msgid "Merging differences..."
 msgstr "Samler forskelle..."
@@ -179,7 +179,7 @@ msgid "This project has no files that can be translated in Poedit."
 msgstr "Dette projekt har ikke nogen filer der kan oversættes i Poedit."
 
 msgid "This file can only be edited in Crowdin’s web interface."
-msgstr ""
+msgstr "Denne fil kan kun redigeres i Crowdin’s webbrugerflade."
 
 msgid "Downloading latest translations…"
 msgstr "Downloader de nyeste oversættelser…"
@@ -244,6 +244,9 @@ msgstr "slet ikke midlertidige filer (til fejlretning)"
 
 msgid "handle a poedit:// URI"
 msgstr "Håndter en poedit:// URI"
+
+msgid "Failed to communicate with Poedit process."
+msgstr "Der kunne ikke kommunikere med Poedit-processen."
 
 #, c-format
 msgid "Unhandled exception occurred: %s"
@@ -486,9 +489,11 @@ msgid ""
 "POT files are only templates and don’t contain any translations themselves.\n"
 "To make a translation, create a new PO file based on the template."
 msgstr ""
+"POT-filer er kun skabeloner som ikke indeholder nogen oversættelser.\n"
+"For at oprette en oversættelse skal du oprette en ny PO-fil fra skabelonen."
 
 msgid "Create New Translation"
-msgstr ""
+msgstr "Opret ny skabelon"
 
 msgid "Create new translation"
 msgstr "Opret ny oversættelse"
@@ -622,6 +627,21 @@ msgstr "Oversættelsen er klar til brug."
 msgid "Context:"
 msgstr "Kontekst:"
 
+#, c-format
+msgid "Poedit automatically fixed invalid content in the file “%s”."
+msgstr "Poedit rettede automatisk ugyldigt indhold i filen \"%s\"."
+
+msgid ""
+"The file contained duplicate items, which is not allowed in PO files and "
+"would prevent the file from being used. Poedit fixed the issue, but you "
+"should review translations of any items marked as fuzzy and correct them if "
+"necessary."
+msgstr ""
+"Filen indeholdt duplikerede emner som ikke er tilladt i PO filer, og som "
+"kunne forhindre filen i at blive brugt. Poedit rettede fejlen, men du bør "
+"gennemgå oversættelser af alle emner der er markeret som uafklaret og rette "
+"dem om nødvendigt."
+
 msgid "Language of the translation isn't set."
 msgstr "Sprog for oversættelsen er ikke angivet."
 
@@ -704,6 +724,12 @@ msgid "%d error"
 msgid_plural "%d errors"
 msgstr[0] "%d fejl"
 msgstr[1] "%d fejl"
+
+#, c-format
+msgid "%d entry"
+msgid_plural "%d entries"
+msgstr[0] "%d post"
+msgstr[1] "%d poster"
 
 msgid " (unsaved)"
 msgstr " (ej gemt)"
@@ -832,7 +858,7 @@ msgid "Form %i"
 msgstr "Form %i"
 
 msgid "Singular"
-msgstr ""
+msgstr "Ental"
 
 msgid "Zero"
 msgstr "Nul"
@@ -844,7 +870,7 @@ msgid "Two"
 msgstr "To"
 
 msgid "Plural"
-msgstr ""
+msgstr "Flertal"
 
 msgid "Other"
 msgstr "Andet"
@@ -874,6 +900,12 @@ msgstr "Skjul sidebjælke"
 msgid "Show Sidebar"
 msgstr "Vis sidebjælke"
 
+msgid "Hide Status Bar"
+msgstr "Skjul statuslinje"
+
+msgid "Show Status Bar"
+msgstr "Vis statuslinje"
+
 msgid "Source text"
 msgstr "Oprindelig tekst"
 
@@ -896,14 +928,6 @@ msgstr "Oversættelse — %s"
 
 msgid "Error:"
 msgstr "Fejl:"
-
-#, c-format
-msgid "%d entries"
-msgstr ""
-
-#, c-format
-msgid "%d entry"
-msgstr ""
 
 msgid "Source file"
 msgstr "Kildefil"
@@ -1230,14 +1254,50 @@ msgstr "Bevar formatering af eksisterende filer"
 msgid "Advanced"
 msgstr "Avanceret"
 
-msgid "Additional keywords"
-msgstr "Yderligere nøgleord"
+msgid ""
+"<big>Drag and Drop Folders Here</big>\n"
+"\n"
+"or use the + button"
+msgstr ""
+"<big>Træk og slip mapper her</big>\n"
+"\n"
+"eller brug + knappen"
+
+msgid ""
+"<big>Drag and drop folders here</big>\n"
+"\n"
+"or use the + button"
+msgstr ""
+"<big>Træk og slip mapper her</big>\n"
+"\n"
+"eller brug + knappen"
+
+msgid "Add Folders..."
+msgstr "Tilføj mapper..."
+
+msgid "Add folders..."
+msgstr "Tilføj mapper..."
+
+msgid "Add Files..."
+msgstr "Tilføj filer..."
+
+msgid "Add files..."
+msgstr "Tilføj filer..."
+
+msgid "Add Wildcard..."
+msgstr "Tilføj wildcard..."
+
+msgid "Add wildcard..."
+msgstr "Tilføj wildcard..."
 
 msgid "Paths"
 msgstr "Stier"
 
 msgid "Excluded paths"
 msgstr "Udelukkede stier"
+
+msgid "Additional keywords"
+msgstr "Yderligere nøgleord"
 
 msgid "Name of the project the translation is for"
 msgstr "Navn på projektet som oversættelsen er til"
@@ -1439,6 +1499,9 @@ msgstr "&Ikke oversatte tekster først"
 msgid "Show sidebar"
 msgstr "Vis sidebjælke"
 
+msgid "Show status bar"
+msgstr "Vis statuslinje"
+
 msgid "C&atalog"
 msgstr "K&atalog"
 
@@ -1611,14 +1674,17 @@ msgstr "E-mail-adressen for holdet:"
 msgid "Translation properties"
 msgstr "Oversættelsesegenskaber"
 
+msgid "Sources paths"
+msgstr "Søgestier"
+
 msgid "Extract text from source files in the following directories:"
 msgstr "Uddrag tekst fra kildefiler i disse mapper:"
 
 msgid "Base path:"
 msgstr "Basissti:"
 
-msgid "Sources paths"
-msgstr "Søgestier"
+msgid "Sources keywords"
+msgstr "Nøgleord i kildefil"
 
 msgid ""
 "Use these keywords (function names) to recognize translatable strings\n"
@@ -1629,9 +1695,6 @@ msgstr ""
 
 msgid "Learn about gettext keywords"
 msgstr "Lær om gettext nøgleord"
-
-msgid "Sources keywords"
-msgstr "Nøgleord i kildefil"
 
 msgid "Update summary"
 msgstr "Opdatér resume"

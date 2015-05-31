@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
-"Report-Msgid-Bugs-To: poedit@googlegroups.com\n"
-"POT-Creation-Date: 2015-04-30 20:06+0200\n"
-"PO-Revision-Date: 2015-04-30 13:54-0400\n"
+"Report-Msgid-Bugs-To: help@poedit.net\n"
+"POT-Creation-Date: 2015-05-27 11:31+0200\n"
+"PO-Revision-Date: 2015-05-27 05:17-0400\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: Marathi\n"
 "Language: mr_IN\n"
@@ -234,6 +234,9 @@ msgid "don't delete temporary files (for debugging)"
 msgstr "तात्पुरत्या फाईल्स काढू नकोस (दोष काढण्याकरिता)"
 
 msgid "handle a poedit:// URI"
+msgstr ""
+
+msgid "Failed to communicate with Poedit process."
 msgstr ""
 
 #, c-format
@@ -602,6 +605,17 @@ msgstr ""
 msgid "Context:"
 msgstr ""
 
+#, c-format
+msgid "Poedit automatically fixed invalid content in the file “%s”."
+msgstr ""
+
+msgid ""
+"The file contained duplicate items, which is not allowed in PO files and "
+"would prevent the file from being used. Poedit fixed the issue, but you "
+"should review translations of any items marked as fuzzy and correct them if "
+"necessary."
+msgstr ""
+
 msgid "Language of the translation isn't set."
 msgstr ""
 
@@ -677,6 +691,12 @@ msgstr ""
 #, c-format
 msgid "%d error"
 msgid_plural "%d errors"
+msgstr[0] ""
+msgstr[1] ""
+
+#, c-format
+msgid "%d entry"
+msgid_plural "%d entries"
 msgstr[0] ""
 msgstr[1] ""
 
@@ -838,6 +858,12 @@ msgstr ""
 msgid "Show Sidebar"
 msgstr ""
 
+msgid "Hide Status Bar"
+msgstr ""
+
+msgid "Show Status Bar"
+msgstr ""
+
 msgid "Source text"
 msgstr "स्त्रोत पाठ्य"
 
@@ -859,14 +885,6 @@ msgid "Translation — %s"
 msgstr ""
 
 msgid "Error:"
-msgstr ""
-
-#, c-format
-msgid "%d entries"
-msgstr ""
-
-#, c-format
-msgid "%d entry"
 msgstr ""
 
 msgid "Source file"
@@ -1178,13 +1196,43 @@ msgstr ""
 msgid "Advanced"
 msgstr ""
 
-msgid "Additional keywords"
+msgid ""
+"<big>Drag and Drop Folders Here</big>\n"
+"\n"
+"or use the + button"
+msgstr ""
+
+msgid ""
+"<big>Drag and drop folders here</big>\n"
+"\n"
+"or use the + button"
+msgstr ""
+
+msgid "Add Folders..."
+msgstr ""
+
+msgid "Add folders..."
+msgstr ""
+
+msgid "Add Files..."
+msgstr ""
+
+msgid "Add files..."
+msgstr ""
+
+msgid "Add Wildcard..."
+msgstr ""
+
+msgid "Add wildcard..."
 msgstr ""
 
 msgid "Paths"
 msgstr "ठिकाणं"
 
 msgid "Excluded paths"
+msgstr ""
+
+msgid "Additional keywords"
 msgstr ""
 
 msgid "Name of the project the translation is for"
@@ -1385,6 +1433,9 @@ msgstr "भाषांतर न केलेली मजकुरं प्�
 msgid "Show sidebar"
 msgstr ""
 
+msgid "Show status bar"
+msgstr ""
+
 msgid "C&atalog"
 msgstr "संग्रह (&a)"
 
@@ -1553,14 +1604,17 @@ msgstr "संघाचा ई-मेल पत्ता:"
 msgid "Translation properties"
 msgstr ""
 
+msgid "Sources paths"
+msgstr "स्त्रोत ठिकाणं:"
+
 msgid "Extract text from source files in the following directories:"
 msgstr "पुढील डिरेक्टरींमध्ये स्त्रोत फाईल्समधून पाठ्यं काढ:"
 
 msgid "Base path:"
 msgstr "मुख्य ठिकाण:"
 
-msgid "Sources paths"
-msgstr "स्त्रोत ठिकाणं:"
+msgid "Sources keywords"
+msgstr "स्त्रोत ओळखशब्द:"
 
 msgid ""
 "Use these keywords (function names) to recognize translatable strings\n"
@@ -1571,9 +1625,6 @@ msgstr ""
 
 msgid "Learn about gettext keywords"
 msgstr ""
-
-msgid "Sources keywords"
-msgstr "स्त्रोत ओळखशब्द:"
 
 msgid "Update summary"
 msgstr "सारांश अद्ययावत कर"

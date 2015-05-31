@@ -142,7 +142,8 @@
             <label>Translation properties</label>
           </object>
           <object class="notebookpage">
-            <object class="wxPanel">
+            <label>Sources paths</label>
+            <object class="wxPanel" name="page_paths">
               <object class="wxBoxSizer">
                 <orient>wxVERTICAL</orient>
                 <object class="sizeritem">
@@ -157,12 +158,16 @@
                     <object class="sizeritem">
                       <object class="wxStaticText">
                         <label>Base path:</label>
+                        <variant platform="mac">small</variant>
                       </object>
                       <border>5d</border>
                       <flag>wxLEFT|wxTOP|wxALIGN_CENTER_VERTICAL</flag>
                     </object>
                     <object class="sizeritem">
-                      <object class="wxTextCtrl" name="basepath"/>
+                      <object class="wxTextCtrl" name="basepath">
+                        <variant platform="mac">small</variant>
+                        <style>wxTE_READONLY</style>
+                      </object>
                       <flag>wxLEFT|wxRIGHT|wxTOP</flag>
                       <border>5d</border>
                       <option>1</option>
@@ -185,10 +190,10 @@
                 </object>
               </object>
             </object>
-            <label>Sources paths</label>
           </object>
           <object class="notebookpage">
-            <object class="wxPanel">
+            <label>Sources keywords</label>
+            <object class="wxPanel" name="page_keywords">
               <object class="wxBoxSizer">
                 <orient>wxVERTICAL</orient>
                 <object class="sizeritem">
@@ -217,7 +222,6 @@
                 </object>
               </object>
             </object>
-            <label>Sources keywords</label>
           </object>
         </object>
         <option>1</option>
