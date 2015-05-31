@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
-"Report-Msgid-Bugs-To: poedit@googlegroups.com\n"
-"POT-Creation-Date: 2015-04-30 20:06+0200\n"
-"PO-Revision-Date: 2015-04-30 13:54-0400\n"
+"Report-Msgid-Bugs-To: help@poedit.net\n"
+"POT-Creation-Date: 2015-05-27 11:31+0200\n"
+"PO-Revision-Date: 2015-05-27 05:17-0400\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
@@ -238,6 +238,9 @@ msgid "don't delete temporary files (for debugging)"
 msgstr "không xóa tập tin tạm (để gỡ lỗi)"
 
 msgid "handle a poedit:// URI"
+msgstr ""
+
+msgid "Failed to communicate with Poedit process."
 msgstr ""
 
 #, c-format
@@ -610,6 +613,17 @@ msgstr "Bản dịch đã sẵn sàng để dùng"
 msgid "Context:"
 msgstr "Ngữ cảnh:"
 
+#, c-format
+msgid "Poedit automatically fixed invalid content in the file “%s”."
+msgstr ""
+
+msgid ""
+"The file contained duplicate items, which is not allowed in PO files and "
+"would prevent the file from being used. Poedit fixed the issue, but you "
+"should review translations of any items marked as fuzzy and correct them if "
+"necessary."
+msgstr ""
+
 msgid "Language of the translation isn't set."
 msgstr "Ngôn ngữ của bản dịch chưa được đặt."
 
@@ -687,6 +701,11 @@ msgstr ""
 #, c-format
 msgid "%d error"
 msgid_plural "%d errors"
+msgstr[0] ""
+
+#, c-format
+msgid "%d entry"
+msgid_plural "%d entries"
 msgstr[0] ""
 
 msgid " (unsaved)"
@@ -846,6 +865,12 @@ msgstr ""
 msgid "Show Sidebar"
 msgstr ""
 
+msgid "Hide Status Bar"
+msgstr ""
+
+msgid "Show Status Bar"
+msgstr ""
+
 msgid "Source text"
 msgstr "Văn bản nguồn"
 
@@ -868,14 +893,6 @@ msgstr "Bản dịch — %s"
 
 msgid "Error:"
 msgstr "Lỗi:"
-
-#, c-format
-msgid "%d entries"
-msgstr ""
-
-#, c-format
-msgid "%d entry"
-msgstr ""
 
 msgid "Source file"
 msgstr "Tập tin mã nguồn"
@@ -1187,14 +1204,44 @@ msgstr ""
 msgid "Advanced"
 msgstr ""
 
-msgid "Additional keywords"
-msgstr "Từ khoá bổ xung"
+msgid ""
+"<big>Drag and Drop Folders Here</big>\n"
+"\n"
+"or use the + button"
+msgstr ""
+
+msgid ""
+"<big>Drag and drop folders here</big>\n"
+"\n"
+"or use the + button"
+msgstr ""
+
+msgid "Add Folders..."
+msgstr ""
+
+msgid "Add folders..."
+msgstr ""
+
+msgid "Add Files..."
+msgstr ""
+
+msgid "Add files..."
+msgstr ""
+
+msgid "Add Wildcard..."
+msgstr ""
+
+msgid "Add wildcard..."
+msgstr ""
 
 msgid "Paths"
 msgstr "Đường dẫn"
 
 msgid "Excluded paths"
 msgstr ""
+
+msgid "Additional keywords"
+msgstr "Từ khoá bổ xung"
 
 msgid "Name of the project the translation is for"
 msgstr "Tên của dự án của bản dịch"
@@ -1395,6 +1442,9 @@ msgstr "Mục &chưa dịch đầu tiên"
 msgid "Show sidebar"
 msgstr ""
 
+msgid "Show status bar"
+msgstr ""
+
 msgid "C&atalog"
 msgstr "C&atalog"
 
@@ -1563,14 +1613,17 @@ msgstr "Địa chỉ thư điện tử của nhóm"
 msgid "Translation properties"
 msgstr "Thuộc tính bản dịch"
 
+msgid "Sources paths"
+msgstr "Đường dẫn mã nguồn"
+
 msgid "Extract text from source files in the following directories:"
 msgstr "Trích xuất văn bản từ mã nguồn trong những thư mục sau đây:"
 
 msgid "Base path:"
 msgstr "Đường dẫn cơ sở:"
 
-msgid "Sources paths"
-msgstr "Đường dẫn mã nguồn"
+msgid "Sources keywords"
+msgstr "Từ khóa dùng cho mã nguồn"
 
 msgid ""
 "Use these keywords (function names) to recognize translatable strings\n"
@@ -1581,9 +1634,6 @@ msgstr ""
 
 msgid "Learn about gettext keywords"
 msgstr "Học thêm về các từ khóa của GNU gettext"
-
-msgid "Sources keywords"
-msgstr "Từ khóa dùng cho mã nguồn"
 
 msgid "Update summary"
 msgstr "Tóm tắt sơ lược quá trình cập nhật"

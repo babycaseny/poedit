@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: poedit\n"
-"Report-Msgid-Bugs-To: poedit@googlegroups.com\n"
-"POT-Creation-Date: 2015-04-30 20:06+0200\n"
-"PO-Revision-Date: 2015-04-30 13:54-0400\n"
+"Report-Msgid-Bugs-To: help@poedit.net\n"
+"POT-Creation-Date: 2015-05-27 11:31+0200\n"
+"PO-Revision-Date: 2015-05-27 05:17-0400\n"
 "Last-Translator: vslavik <vaclav@slavik.io>\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -102,7 +102,7 @@ msgid "POT Translation Templates"
 msgstr "POT-Übersetzungsvorlagen"
 
 msgid "All Translation Files"
-msgstr ""
+msgstr "Alle Übersetzungsdateien"
 
 msgid "Merging differences..."
 msgstr "Änderungen werden zusammengefügt …"
@@ -189,6 +189,7 @@ msgstr ""
 
 msgid "This file can only be edited in Crowdin’s web interface."
 msgstr ""
+"Diese Datei kann nur in der Weboberfläche von Crowdin bearbeitet werden."
 
 msgid "Downloading latest translations…"
 msgstr "Neueste Übersetzungen werden heruntergeladen …"
@@ -253,6 +254,9 @@ msgstr "Temporäre Dateien nicht entfernen (für Fehlersuche)"
 
 msgid "handle a poedit:// URI"
 msgstr "poedit:// Adresse verwenden"
+
+msgid "Failed to communicate with Poedit process."
+msgstr "Kommunikation mit Poedit-Prozess fehlgeschlagen."
 
 #, c-format
 msgid "Unhandled exception occurred: %s"
@@ -497,9 +501,12 @@ msgid ""
 "POT files are only templates and don’t contain any translations themselves.\n"
 "To make a translation, create a new PO file based on the template."
 msgstr ""
+"POT-Dateien sind nur Vorlagen, sie enthalten selbst keine Übersetzungen.\n"
+"Um eine Übersetzung zu starten, legen Sie eine neue PO-Datei an, die auf der "
+"Vorlage basiert."
 
 msgid "Create New Translation"
-msgstr ""
+msgstr "Neue Übersetzung anlegen"
 
 msgid "Create new translation"
 msgstr "Neue Übersetzung erstellen"
@@ -640,6 +647,22 @@ msgstr "Die Übersetzung kann verwendet werden."
 msgid "Context:"
 msgstr "Zusammenhang:"
 
+#, c-format
+msgid "Poedit automatically fixed invalid content in the file “%s”."
+msgstr ""
+"Ungültige Inhalte der Datei »%s« wurden von Poedit automatisch korrigiert."
+
+msgid ""
+"The file contained duplicate items, which is not allowed in PO files and "
+"would prevent the file from being used. Poedit fixed the issue, but you "
+"should review translations of any items marked as fuzzy and correct them if "
+"necessary."
+msgstr ""
+"Die Datei enthält doppelte Einträge, was in PO-Dateien nicht zulässig ist "
+"und dazu führen würde, dass die Datei nicht verwendet wird. Dieses Problem "
+"wurde von Poedit behoben. Sie sollten allerdings Übersetzungen, die als "
+"unklar markiert sind, prüfen und diese falls erforderlich korrigieren."
+
 msgid "Language of the translation isn't set."
 msgstr "Sprache der Übersetzung ist nicht festgelegt."
 
@@ -722,6 +745,12 @@ msgid "%d error"
 msgid_plural "%d errors"
 msgstr[0] "%d Fehler"
 msgstr[1] "%d Fehler"
+
+#, c-format
+msgid "%d entry"
+msgid_plural "%d entries"
+msgstr[0] "%d Eintrag"
+msgstr[1] "%d Einträge"
 
 msgid " (unsaved)"
 msgstr " (ungespeichert)"
@@ -852,7 +881,7 @@ msgid "Form %i"
 msgstr "Form %i"
 
 msgid "Singular"
-msgstr ""
+msgstr "Singular"
 
 msgid "Zero"
 msgstr "Null"
@@ -864,7 +893,7 @@ msgid "Two"
 msgstr "Zwei"
 
 msgid "Plural"
-msgstr ""
+msgstr "Plural"
 
 msgid "Other"
 msgstr "Plural"
@@ -894,6 +923,12 @@ msgstr "Seitenleiste ausblenden"
 msgid "Show Sidebar"
 msgstr "Seitenleiste anzeigen"
 
+msgid "Hide Status Bar"
+msgstr "Statusleiste ausblenden"
+
+msgid "Show Status Bar"
+msgstr "Statusleiste anzeigen"
+
 msgid "Source text"
 msgstr "Quelltext"
 
@@ -916,14 +951,6 @@ msgstr "Übersetzung – %s"
 
 msgid "Error:"
 msgstr "Fehler:"
-
-#, c-format
-msgid "%d entries"
-msgstr ""
-
-#, c-format
-msgid "%d entry"
-msgstr ""
 
 msgid "Source file"
 msgstr "Quelldatei"
@@ -1254,14 +1281,50 @@ msgstr "Formatierung vorhandener Dateien beibehalten"
 msgid "Advanced"
 msgstr "Erweitert"
 
-msgid "Additional keywords"
-msgstr "Zusätzliche Schlüsselwörter"
+msgid ""
+"<big>Drag and Drop Folders Here</big>\n"
+"\n"
+"or use the + button"
+msgstr ""
+"<big>Ziehen und legen Sie Ordner hier ab</big>\n"
+"\n"
+"oder verwenden Sie den + Knopf"
+
+msgid ""
+"<big>Drag and drop folders here</big>\n"
+"\n"
+"or use the + button"
+msgstr ""
+"<big>Ziehen und legen Sie Ordner hier ab</big>\n"
+"\n"
+"oder verwenden Sie den + Knopf"
+
+msgid "Add Folders..."
+msgstr "Ordner hinzufügen …"
+
+msgid "Add folders..."
+msgstr "Ordner hinzufügen …"
+
+msgid "Add Files..."
+msgstr "Dateien hinzufügen …"
+
+msgid "Add files..."
+msgstr "Dateien hinzufügen …"
+
+msgid "Add Wildcard..."
+msgstr "Platzhalter hinzufügen …"
+
+msgid "Add wildcard..."
+msgstr "Platzhalter hinzufügen …"
 
 msgid "Paths"
 msgstr "Pfade"
 
 msgid "Excluded paths"
 msgstr "Ausgeschlossene Pfade"
+
+msgid "Additional keywords"
+msgstr "Zusätzliche Schlüsselwörter"
 
 msgid "Name of the project the translation is for"
 msgstr "Name des Projektes der Übersetzung"
@@ -1463,6 +1526,9 @@ msgstr "&Nicht übersetzte Einträge zuerst"
 msgid "Show sidebar"
 msgstr "Seitenleiste anzeigen"
 
+msgid "Show status bar"
+msgstr "Statusleiste anzeigen"
+
 msgid "C&atalog"
 msgstr "&Katalog"
 
@@ -1637,14 +1703,17 @@ msgstr "E-Mail-Adresse des Übersetzerteams:"
 msgid "Translation properties"
 msgstr "Übersetzungseinstellungen"
 
+msgid "Sources paths"
+msgstr "Quell-Pfade"
+
 msgid "Extract text from source files in the following directories:"
 msgstr "Text aus Quelldateien in den folgenden Ordnern extrahieren:"
 
 msgid "Base path:"
 msgstr "Ausgangspfad:"
 
-msgid "Sources paths"
-msgstr "Quell-Pfade"
+msgid "Sources keywords"
+msgstr "Schlüsselwörter aus Quelltexten"
 
 msgid ""
 "Use these keywords (function names) to recognize translatable strings\n"
@@ -1655,9 +1724,6 @@ msgstr ""
 
 msgid "Learn about gettext keywords"
 msgstr "Weitere Informationen zu gettext-Schlüsselwörtern"
-
-msgid "Sources keywords"
-msgstr "Schlüsselwörter aus Quelltexten"
 
 msgid "Update summary"
 msgstr "Zusammenfassung der Aktualisierung"
